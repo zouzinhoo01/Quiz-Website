@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Create</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <h3>Quiz Website</h3>
+        <div>
+            <a href="../home/home.html">Home</a>
+            <a href="../quizes/quizes.html">Quizes</a>
+            <a href="../create/create.html">Create</a>
+        </div>
+    </header>
+    <div class="loading">
+        <div></div>
+    </div>
+    <div class="quiz-creation-warning">Quiz Created Successfully</div>
+    <div class="quiz-delete-process">
+        <h3>Are you sure to delete it?</h3>
+        <div>
+            <button id="quiz-delete-yes">Yes</button>
+            <button id="quiz-delete-no">No</button>
+        </div>
+    </div>
+    <section class="my-quizes">
+        <h3>My Quizes</h3>
+        <button class="create">Create +</button>
+        <div class="quiz-list"></div>
+    </section>
+    <section class="quiz-creation">
+        <h3 class="quiz-creation-editing">* Editing Mode *</h3>
+        <button class="quiz-creation-finish">Finish</button>
+        <button class="quiz-creation-close">Close</button>
+        <h5 class="quiz-creation-invalid-title">A quiz with the same title already exists</h5>
+        <h5 class="quiz-creation-invalid-questions">Atleast one question needs to exist</h5>
+        <div>
+            <p>Title</p>
+            <input id="quiz_creation_title" type="text">
+        </div>
+        <div>
+            <p>Author</p>
+            <input id="quiz_creation_author" type="text">
+        </div>
+        <div>
+            <p>Description</p>
+            <input id="quiz_creation_description" type="text">
+        </div>
+        <div>
+            <p>Difficulty</p>
+            <button id="quiz_creation_difficulty">Easy</button>
+        </div>
+        <div>
+            <p>Questions</p>
+            <button id="quiz_creation_clear_questions">Clear</button>
+            <button id="quiz_creation_create_question">Create</button>
+        </div>
+        <section class="questions-creation">
+
+        </section>
+    </section>
+    <script src="create.js"></script>
+</body>
+
+</html>

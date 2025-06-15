@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Quizes</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <h3>Quiz Website</h3>
+        <div>
+            <a href="../home/home.html">Home</a>
+            <a href="../quizes/quizes.html">Quizes</a>
+            <a href="../create/create.html">Create</a>
+        </div>
+    </header>
+    <div class="main">
+        <div>
+            <input class="search" type="text" placeholder="Search for any quiz">
+            <a href="../create/create.html" class="create">Create Quiz</a>
+        </div>
+        <div class="quiz-list"></div>
+    </div>
+    <div class="loading">
+        <div></div>
+    </div>
+    <section>
+        <div class="quiz-finish">
+            <h1 class="quiz-finish-title">Quiz Title</h1>
+            <h4 class="quiz-finish-difficulty">Quiz Difficulty: Easy</h4>
+            <h4 class="quiz-finish-questions">Questions: 0</h4>
+            <div>
+                <span class="material-icons">check</span>
+                <p class="quiz-finish-correct-questions">Correct Questions: 0</p>
+                <p class="quiz-finish-all-correct-questions">Good Job!</p>
+            </div>
+            <div>
+                <span class="material-icons">close</span>
+                <p class="quiz-finish-incorrect-questions">Incorrect Questions: 0</p>
+            </div>
+            <button class="quiz-finish-button">Complete</button>
+        </div>
+        <div class="quiz-correct-answer"><span class="material-icons">check</span></div>
+        <div class="quiz-wrong-answer"><span class="material-icons">close</span></div>
+        <div class="quiz"></div>
+    </section>
+    <script src="quizes.js"></script>
+</body>
+
+</html>
